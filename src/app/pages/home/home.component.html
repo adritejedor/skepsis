@@ -1,14 +1,19 @@
 <div class="page-wrapper">
-  <div class="page-header">
-    <div class="page-title">
-        Skepsis Ink
-    </div>
-    <div class="page-subtitle">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt eget purus et aliquam. Nunc nec sapien id massa faucibus laoreet sagittis id leo. Aenean accumsan iaculis blandit. Etiam et elit eleifend, imperdiet ante vel, scelerisque tellus. Fusce accumsan auctor orci. Praesent maximus, massa vel placerat vestibulum, purus dui imperdiet mauris, non ornare dolor neque sit amet urna. Ut molestie risus eget varius vulputate. Duis sem lorem, consequat quis nunc id, tincidunt finibus lacus. Nullam ultrices elit vitae odio sodales facilisis. Curabitur eget congue eros. Etiam dictum lectus augue, vitae consectetur turpis ullamcorper vitae. Aliquam dapibus tellus nisi, et tempus sapien vestibulum ut. Pellentesque dui magna, ultricies ut blandit interdum, laoreet ac libero. 
+    <div class="page-header">
+        <div class="page-title">
+            Skepsis Ink
+        </div>
+        <div class="page-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt eget purus et aliquam. Nunc nec sapien id massa faucibus laoreet sagittis id leo. Aenean accumsan iaculis blandit. Etiam et elit eleifend, imperdiet ante vel, scelerisque tellus.
+            Fusce accumsan auctor orci. Praesent maximus, massa vel placerat vestibulum, purus dui imperdiet mauris, non ornare dolor neque sit amet urna. Ut molestie risus eget varius vulputate. Duis sem lorem, consequat quis nunc id, tincidunt finibus
+            lacus. Nullam ultrices elit vitae odio sodales facilisis. Curabitur eget congue eros. Etiam dictum lectus augue, vitae consectetur turpis ullamcorper vitae. Aliquam dapibus tellus nisi, et tempus sapien vestibulum ut. Pellentesque dui magna,
+            ultricies ut blandit interdum, laoreet ac libero.
+        </div>
+
     </div>
 
-  </div>
+    <div class="separator-triangle"></div>
 
-  <div class="separator-triangle"></div>
-  
+    <app-image-card *ngFor="let item of cardData" [inputData]="item"></app-image-card>
+
 </div>

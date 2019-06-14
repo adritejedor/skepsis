@@ -11,6 +11,6 @@ export class TattooService {
   ) { }
 
   public getTattooCardData() {
-    this.http.get('../assets/mocks/card-data.json');
+   return this.http.get('../assets/mocks/card-data.json');
   }
 }

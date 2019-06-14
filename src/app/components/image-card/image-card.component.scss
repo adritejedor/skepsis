@@ -1,0 +1,45 @@
+.card-wrapper {
+    width: 200px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    .card-image {
+        width: 100%;
+        height: 300px;
+        .image {
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: cover;
+        }
+    }
+    .main-row {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        .card-title {
+            width: 80%;
+            justify-content: start;
+        }
+        .card-icons {
+            width: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .insta-icon {
+                width: 50%;
+            }
+            .like-icon {
+                width: 50%;
+            }
+        }
+    }
+    .sub-row {
+        width: 100%;
+        height: 150px;
+    }
+    .date-row {
+        width: 100%;
+        height: 50px;
+    }
+}

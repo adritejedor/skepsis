@@ -1,3 +1,23 @@
-<p>
-  image-card works!
-</p>
+<div class="card-wrapper">
+    <div class="card-image">
+        <img src="{{inputData.imageUrl}}" class="image">
+    </div>
+    <div class="main-row">
+        <div class="card-title">
+            {{inputData.title}}
+        </div>
+        <div class="card-icons">
+            <div class="insta-icon" (click)="goToInsta()">
+            </div>
+            <div class="like-icon" (click)="like(inputData.imageId)">
+
+            </div>
+        </div>
+    </div>
+    <div class="sub-row">
+        {{inputData.description}}
+    </div>
+    <div class="date-row">
+        {{inputData.date}}
+    </div>
+</div>

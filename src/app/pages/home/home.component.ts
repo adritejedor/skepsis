@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TattooService } from '../../services/tattoo-service';
+import { TattooCard } from '../../models/tattoo-card-model';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public cardData: TattooCard[];
+
+  constructor(
+    private cardService: TattooService
+  ) { }
 
   ngOnInit() {
+    this.cardService.getTattooCardData().subscribe(
+      (resp: TattooCard[]) => {
+        this.cardData = resp;
+        console.log(this.cardData);
+      }, (err) => {
+        console.error(err);
+      }
+    );
   }
 
 }

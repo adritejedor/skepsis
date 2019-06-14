@@ -1,0 +1,8 @@
+[{
+    "title": "Tattoo",
+    "imageUrl": "../../assets/images/example-card/example.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt eget purus et aliquam. Nunc nec sapien id massa faucibus laoreet sagittis id leo. Aenean accumsan iaculis blandit.",
+    "likes": 18,
+    "instaUrl": "https://www.instagram.com",
+    "date": "14-06-2019"
+}]
